@@ -54,6 +54,13 @@ res.render('about.hbs',{
 
 });
 });
+app.get('/projects',(req,res)=>{
+res.render('projects.hbs',{
+  PageTitle:'projects page'
+
+});
+});
+
 app.get('/bad',(req,res)=>{
   res.send({
     error:'there is an error '
